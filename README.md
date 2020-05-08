@@ -7,6 +7,12 @@ molecool
 
 A Python package for analyzing and visualizing pdb and xyz files.
 
+This repository is currently under development. To development install, download this repository and type
+
+'pip install -e .'
+
+in the repository directory.
+
 ### Copyright
 
 Copyright (c) 2020, Liwei Chang
