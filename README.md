@@ -13,6 +13,10 @@ This repository is currently under development. To development install, download
 
 in the repository directory.
 
+This package requires the following:
+- Numpy
+- Matplotlib
+
 ### Copyright
 
 Copyright (c) 2020, Liwei Chang
