@@ -2,6 +2,7 @@
 function for molecule
 """
 
+from .molecule import *
 def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
     
     # Find the bonds in a molecule

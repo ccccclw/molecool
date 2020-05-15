@@ -5,7 +5,10 @@ A Python package for analyzing and visualizing pdb and xyz files.
 
 # Add imports here
 from .functions import *
-
+from .molecule import *
+from .visulize import *
+from .measure import *
+from .atom_data import *
 # Handle versioneer
 from ._version import get_versions
 versions = get_versions()
