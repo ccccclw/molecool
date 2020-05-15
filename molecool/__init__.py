@@ -9,6 +9,8 @@ from .molecule import *
 from .visulize import *
 from .measure import *
 from .atom_data import *
+from .io_data import *
+
 # Handle versioneer
 from ._version import get_versions
 versions = get_versions()
