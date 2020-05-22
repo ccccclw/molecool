@@ -6,7 +6,26 @@ This module is for functions
 import numpy as np
 
 def calculate_distance(rA, rB):
+    """
+    Calculate the distance between two points.
 
+    Parameters
+    ----------
+    rA, rB : np.ndarray
+        The coordinates of each point.
+
+    Return 
+    ------
+    distance : float
+        The distance between the two points
+    
+    Examples
+    --------
+    >>> r1 = np.array([0.0,0.0,0.0])
+    >>> r2 = np.array([0.0,0.0,0.0])
+    >>> calculate_dist(r1, r2)
+    1.0
+    """
     if isinstance(rA, np.ndarray) is False or isinstance(rB, np.ndarray) is False:
         raise TypeError("input should be numpy array")
     d=(rA-rB)
