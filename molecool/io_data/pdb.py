@@ -23,14 +23,21 @@ def open_pdb(file_location):
         The atomic symbols of the xyz file.
 
     """
-    with open(file_location) as f:
-        data = f.readlines()
+    try:
+        with open(file_location) as f:
+            data = f.readlines()
+    except FileNotFoundError as fnf_error:
+        print (fnf_error)
     coordinates = []
     symbols = []
     for line in data:
         if 'ATOM' in line[0:6] or 'HETATM' in line[0:6]:
             symbols.append(line[76:79].strip())
-            atom_coords = [float(x) for x in line[30:55].split()]
+            try:
+                atom_coords = [float(x) for x in line[30:55].split()]
+            except ValueError as ve:
+                print(ve)
+                
             coordinates.append(atom_coords)
     coords = np.array(coordinates)
     return symbols, coords
