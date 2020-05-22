@@ -35,6 +35,19 @@ def calculate_distance(rA, rB):
     return distance
 
 def calculate_angle(rA, rB, rC, degrees=False):
+    """
+    Calculate the angle given three coordinates.
+
+    Parameter
+    ---------
+    rA, rB, rC : np.ndarray
+        The coordinates of each point.
+
+    Return
+    ______
+    angle : float
+        The angle given three coordinates
+    """
     AB = rB - rA
     BC = rB - rC
     theta=np.arccos(np.dot(AB, BC)/(np.linalg.norm(AB)*np.linalg.norm(BC)))
