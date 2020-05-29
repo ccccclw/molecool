@@ -5,8 +5,8 @@ dependencies:
   - python
   - pip
 
-  -numpy
-  -matplotlib
+  - numpy
+  - matplotlib
 
     # Testing
   - pytest
